@@ -19,7 +19,7 @@ public class WeatherHelper {
     public void searchWeather(android.content.Context context) {
         String city = cityName;
         if (!city.isEmpty()) {
-            String url = "https://api.openweathermap.org/data/2.5/weather?q=pune&appid=f06d62f563bf3dc72d0a731022465bf3";
+            String url = "https://api.openweathermap.org/data/2.5/weather?q=pune&appid="apiid"";
             fetchWeather(url);
         } else {
             Toast.makeText(context, "Enter City", Toast.LENGTH_SHORT).show();
