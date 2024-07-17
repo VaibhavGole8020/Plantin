@@ -34,7 +34,7 @@ import java.util.Date;
 public class aiactivity extends AppCompatActivity {
     private static final String TAG = "AiDetectActivity";
     private static final int REQUEST_IMAGE_CAPTURE = 1;
-    private static final String API_KEY = "AIzaSyA5dJKnsjek_8aHvQkGMWWF64WauZBL8js"; // Replace with your API key
+    private static final String API_KEY = ""; // Replace with your API key
     ImageView i;
     private String currentPhotoPath;
     private TextView tvshow;
