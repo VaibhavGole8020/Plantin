@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="Widget.Theme.Plant_care.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="ThemeNoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+
+        <!-- Define Bottom Navigation Theme -->
+        <style name="Theme.BottomNavigation" parent="Theme.MaterialComponents.Light.NoActionBar">
+            <item name="bottomNavigationStyle">@style/Widget.BottomNavigation</item>
+        </style>
+
+        <style name="Widget.BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
+            <item name="itemIconTint">@color/bottom_nav_icon_color</item>
+            <item name="itemTextColor">@color/bottom_nav_text_color</item>
+            <item name="itemBackground">@android:color/white</item>
+            <item name="elevation">8dp</item>
+            <item name="itemRippleColor">?attr/colorControlHighlight</item>
+        </style>
+</resources>

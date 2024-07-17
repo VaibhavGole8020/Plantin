@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "592576916610",
+    "firebase_url": "https://iotsensor-2ef10-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "iotsensor-2ef10",
+    "storage_bucket": "iotsensor-2ef10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592576916610:android:78613c57606ef38d7ad89b",
+        "android_client_info": {
+          "package_name": "com.example.plant_care"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6ZOXmHLvEBFx_qIqUxnFZZxhf3DqJ9bQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tolcontent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/bottom_nav_icon_color">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+
+            app:title="Plantin"
+            app:titleTextColor="@android:color/black">
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/srollscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignEnd="@id/tolcontent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginEnd="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:id="@+id/weatherInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_rectangle"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.034">
+
+                <TextView
+                    android:id="@+id/cityDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/temperature"
+                    android:layout_width="66dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/weatherIcon"
+                    android:layout_width="39dp"
+                    android:layout_height="63dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/rain" />
+            </LinearLayout>
+
+            <GridLayout
+                android:id="@+id/optionsGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/weatherInfo"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_rectangle"
+                android:columnCount="2"
+                android:paddingBottom="20dp"
+                android:rowCount="3"
+                android:tooltipText="Options Grid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/expenseGrid"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="145dp">
+
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="35dp"
+                    android:gravity="center" />
+
+
+                <TextView
+                    android:layout_width="302dp"
+                    android:layout_height="37dp"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center"
+                    android:text="Remember me" />
+
+                <CheckBox android:id="@+id/checkbox2">
+
+                </CheckBox>
+
+                <EditText
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox android:id="@+id/checkbox3">
+
+                </CheckBox>
+
+                <EditText
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox android:id="@+id/checkbox4">
+
+                </CheckBox>
+
+                <EditText
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox android:id="@+id/checkbox5">
+
+                </CheckBox>
+
+                <EditText
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox android:id="@+id/checkbox6">
+
+                </CheckBox>
+
+                <EditText
+                    android:layout_width="298dp"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox android:id="@+id/checkbox7">
+
+                </CheckBox>
+
+                <EditText
+                    android:layout_width="293dp"
+                    android:layout_height="wrap_content" />
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/expenseGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/optionsGrid"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_rectangle"
+                android:columnCount="2"
+                android:rowCount="3"
+                android:tooltipText="expense Grid"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="528dp">
+
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="35dp"
+                    android:gravity="center" />
+
+
+                <TextView
+                    android:layout_width="302dp"
+                    android:layout_height="37dp"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center"
+                    android:text="Expense" />
+
+                <CheckBox android:id="@+id/checkbox8">
+
+                </CheckBox>
+
+                <EditText
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox android:id="@+id/checkbox9">
+
+                </CheckBox>
+
+                <EditText
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox android:id="@+id/checkbox10">
+
+                </CheckBox>
+
+                <EditText
+                    android:layout_width="296dp"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox android:id="@+id/checkbox11">
+
+                </CheckBox>
+
+                <EditText
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox android:id="@+id/checkbox12">
+
+                </CheckBox>
+
+                <EditText
+                    android:layout_width="298dp"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox android:id="@+id/checkbox13">
+
+                </CheckBox>
+
+                <EditText
+                    android:layout_width="293dp"
+                    android:layout_height="wrap_content" />
+            </GridLayout>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/expenseGrid"
+                app:layout_constraintStart_toEndOf="parent"
+                android:columnCount="2"
+                android:layout_gravity="center"
+                android:rowCount="2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="40dp"
+                tools:layout_editor_absoluteY="900dp">
+                <Button
+                    android:id="@+id/SenceRead"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_columnWeight="1.0"
+                    android:layout_rowWeight="1"
+                    android:text="Sensor Read"/>
+                <Button
+                    android:id="@+id/Ai"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_columnWeight="1.0"
+                    android:layout_rowWeight="1"
+                    android:text="AI button"
+                    />
+
+            </GridLayout>
+            <TextView
+                android:id="@+id/bin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:layout_below="@id/expenseGrid"
+                android:layout_alignParentEnd="true"
+
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
